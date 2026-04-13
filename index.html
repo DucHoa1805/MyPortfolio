@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="vi" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Portfolio | Trang cá nhân</title>
+    <meta
+      name="description"
+      content="Portfolio cá nhân: giới thiệu, kỹ năng, dự án và liên hệ."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Bỏ qua điều hướng</a>
+
+    <div id="top" aria-hidden="true"></div>
+    <header class="header" id="site-header">
+      <div class="container header__inner">
+        <a class="brand" href="#top" aria-label="Về đầu trang">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__name">Lưu Đức Hòa</span>
+        </a>
+
+        <nav class="nav" aria-label="Điều hướng chính">
+          <button
+            class="nav__toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav-links"
+          >
+            Menu
+          </button>
+          <div class="nav__links" id="nav-links">
+            <a href="#about">Giới thiệu</a>
+            <a href="#skills">Kỹ năng</a>
+            <a href="#projects">Dự án</a>
+            <a href="#contact" class="pill">Liên hệ</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="badge">Available for freelance • 2026</p>
+            <h1>
+              Xin chào, mình là <span class="grad">Lưu Đức Hòa</span>.<br />
+              Backend Developer<span class="nowrap">.NET</span>
+            </h1>
+            <p class="lead">
+              Tập trung vào ASP.NET Core, Web API, SQL Server và kiến trúc sạch (Clean Architecture),
+              ưu tiên hiệu năng, bảo mật và khả năng mở rộng.
+            </p>
+
+            <div class="cta">
+              <a class="btn btn--primary" href="#projects">Xem dự án</a>
+              <button class="btn btn--ghost" type="button" data-copy-email>
+                Copy email
+              </button>
+              <a class="btn btn--ghost" href="./assets/CV.pdf" download>
+                Tải CV
+              </a>
+            </div>
+
+            <div class="meta">
+              <div class="meta__item">
+                <span class="meta__k">Email</span>
+                <a class="meta__v" href="mailto:duchoa0741@gmail.com">Duchoa0741@gmail.com</a>
+              </div>
+              <div class="meta__item">
+                <span class="meta__k">Địa điểm</span>
+                <span class="meta__v">Hà Nội - Việt Nam</span>
+             </div>
+              <div class="meta__item">
+                <span class="meta__k">Links</span>
+                <span class="meta__v">
+                  <a href="https://github.com/DucHoa1805" aria-label="GitHub">GitHub</a>
+                  <span aria-hidden="true"> · </span>
+                  <a href="https://www.linkedin.com/in/duchoa055/" aria-label="LinkedIn">LinkedIn</a>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__card" aria-label="Thẻ thông tin">
+            <div class="card">
+              <div class="card__top">
+                <div class="avatar">
+                  <img src="img/avatar.jpg" alt="Ảnh đại diện của tôi" />
+                </div>
+                <div>
+                  <div class="card__name">Lưu Đức Hòa</div>
+                  <div class="card__role">Backend Developer • .NET</div>
+                </div>
+              </div>
+              <div class="card__stats">
+                <div class="stat">
+                  <div class="stat__v">1+ năm</div>
+                  <div class="stat__k">Kinh nghiệm</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__v">15+</div>
+                  <div class="stat__k">Dự án</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__v">A+</div>
+                  <div class="stat__k">Performance</div>
+                </div>
+              </div>
+              <div class="card__note">
+                "Lập trình viên .NET với tư duy ứng dụng AI (LLM, RAG, AI Agent) để tối ưu hóa hiệu suất code và quy trình phát triển phần mềm. Mục tiêu trở thành một AI-driven Backend Engineer, không chỉ xây dựng hệ thống .NET bền vững mà còn tích hợp các giải pháp nhằm nâng cao trải nghiệm người dùng và tự động hóa nghiệp vụ phức tạp."
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section__head">
+            <h2 style="margin-top: 20px;">Giới thiệu</h2>
+            <p>
+              "Phát triển ứng dụng mobile, web, winform với hệ sinh thái .NET. Với khả năng design system chuyên sâu, tôi có thể xây dựng và thiết kế các hệ thống hiệu năng cao, tương thích nhiều thiết bị, có khả năng mở rộng.”
+            </p>
+          </div>
+          <div class="grid grid--2">
+            <div class="panel">
+              <h3>Mình làm gì?</h3>
+              <ul class="list">
+                <li>Thiết kế UI, xây dựng landing page/website doanh nghiệp</li>
+                <li>Tối ưu tốc độ tải và SEO cơ bản</li>
+                <li>Tích hợp API, form, email, dashboard</li>
+              </ul>
+            </div>
+            <div class="panel">
+              <h3>Điểm mạnh</h3>
+              <ul class="list">
+                <li>Giao tiếp rõ ràng, bàn giao gọn gàng</li>
+                <li>Thẩm mỹ tốt + chú ý tiểu tiết</li>
+                <li>Ưu tiên chất lượng, bảo trì dễ</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section__head">
+            <h2>Kỹ năng</h2>
+          </div>
+
+          <div class="chips" role="list">
+            <span class="chip" role="listitem">HTML</span>
+            <span class="chip" role="listitem">CSS</span>
+            <span class="chip" role="listitem">JavaScript</span>
+            <span class="chip" role="listitem">TypeScript</span>
+            <span class="chip" role="listitem">React</span>
+            <span class="chip" role="listitem">Node.js</span>
+            <span class="chip" role="listitem">SQL</span>
+            <span class="chip" role="listitem">Git</span>
+            <span class="chip" role="listitem">UI/UX</span>
+            <span class="chip" role="listitem">SEO</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section__head">
+            <h2>Dự án nổi bật</h2>
+            <p>
+              ...
+            </p>
+          </div>
+
+          <div class="grid grid--3">
+            <article class="proj">
+              <div class="proj__thumb" aria-hidden="true"></div>
+              <h3>Landing Page</h3>
+              <p>Trang giới thiệu sản phẩm, tối ưu chuyển đổi, responsive.</p>
+              <div class="proj__tags">
+                <span>HTML</span><span>CSS</span><span>JS</span>
+              </div>
+              <div class="proj__actions">
+                <a class="link" href="#">Demo</a>
+                <a class="link" href="#">Source</a>
+              </div>
+            </article>
+
+            <article class="proj">
+              <div class="proj__thumb proj__thumb--2" aria-hidden="true"></div>
+              <h3>Dashboard</h3>
+              <p>Bảng điều khiển, biểu đồ, phân quyền và lọc dữ liệu.</p>
+              <div class="proj__tags">
+                <span>React</span><span>API</span><span>Charts</span>
+              </div>
+              <div class="proj__actions">
+                <a class="link" href="#">Demo</a>
+                <a class="link" href="#">Source</a>
+              </div>
+            </article>
+
+            <article class="proj">
+              <div class="proj__thumb proj__thumb--3" aria-hidden="true"></div>
+              <h3>Website doanh nghiệp</h3>
+              <p>Trang dịch vụ, form liên hệ, SEO cơ bản, tốc độ tốt.</p>
+              <div class="proj__tags">
+                <span>Next.js</span><span>SEO</span><span>SSR</span>
+              </div>
+              <div class="proj__actions">
+                <a class="link" href="#">Demo</a>
+                <a class="link" href="#">Source</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="contact">
+            <div>
+              <h2>Liên hệ</h2>
+              <p>
+                Gửi yêu cầu dự án / hợp tác. Mình sẽ phản hồi sớm (thường trong 24h).
+              </p>
+              <div class="contact__rows">
+                <div class="row">
+                  <span class="row__k">Email</span>
+                  <a class="row__v" href="mailto:duchoa0741@gmail.com">duchoa0741@gmail.com</a>
+                </div>
+                <div class="row">
+                  <span class="row__k">Số điện thoại</span>
+                  <a class="row__v" href="tel:+84000000000">+84 913414636</a>
+                </div>
+              </div>
+            </div>
+
+            <form class="form" action="#" method="post">
+              <label>
+                <span>Họ tên</span>
+                <input name="name" autocomplete="name" placeholder="Nhập tên của bạn" required />
+              </label>
+              <label>
+                <span>Email</span>
+                <input
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="Nhập email của bạn"
+                  required
+                />
+              </label>
+              <label>
+                <span>Nội dung</span>
+                <textarea
+                  name="message"
+                  rows="4"
+                  placeholder="Mô tả ngắn yêu cầu của bạn..."
+                  required
+                ></textarea>
+              </label>
+              <button class="btn btn--primary" type="submit">Gửi</button>
+              <p class="hint">
+                LeeMinHoa
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>© <span data-year></span>LeeMinHoa</span>
+        <a href="#top" class="link">Lên đầu trang</a>
+      </div>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="./assets/app.js" defer></script>
+  </body>
+</html>
