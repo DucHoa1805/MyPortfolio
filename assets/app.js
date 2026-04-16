@@ -1,4 +1,5 @@
-const EMAIL = "you@example.com";
+const EMAIL = "duchoa0741@gmail.com";
+const CONTACT_ENDPOINT = "/api/contact";
 
 function $(sel, root = document) {
   return root.querySelector(sel);
@@ -66,6 +67,56 @@ function setupCopyEmail() {
   btn.addEventListener("click", copyEmail);
 }
 
+async function submitContactForm(form) {
+  const fd = new FormData(form);
+  const payload = {
+    name: String(fd.get("name") || "").trim(),
+    email: String(fd.get("email") || "").trim(),
+    message: String(fd.get("message") || "").trim(),
+  };
+
+  const btn = form.querySelector('button[type="submit"]');
+  const prevText = btn ? btn.textContent : "";
+  if (btn) {
+    btn.disabled = true;
+    btn.textContent = "Đang gửi...";
+  }
+
+  try {
+    const res = await fetch(CONTACT_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok) {
+      throw new Error(data?.error || "Gửi thất bại. Vui lòng thử lại.");
+    }
+
+    form.reset();
+    showToast("Đã gửi. Mình sẽ phản hồi sớm.");
+  } finally {
+    if (btn) {
+      btn.disabled = false;
+      btn.textContent = prevText || "Gửi";
+    }
+  }
+}
+
+function setupContactForm() {
+  const form = document.querySelector("[data-contact-form]");
+  if (!form) return;
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    try {
+      await submitContactForm(form);
+    } catch (err) {
+      showToast(err?.message || "Gửi thất bại. Vui lòng thử lại.");
+    }
+  });
+}
+
 function setupReveal() {
   const targets = document.querySelectorAll(
     [
@@ -105,4 +156,5 @@ function setupReveal() {
 setupYear();
 setupNav();
 setupCopyEmail();
+setupContactForm();
 setupReveal();
