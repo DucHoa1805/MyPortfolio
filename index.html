@@ -131,24 +131,46 @@
           <div class="section__head">
             <h2 style="margin-top: 20px;">Giới thiệu</h2>
             <p>
-              "Phát triển ứng dụng mobile, web, winform với hệ sinh thái .NET. Với khả năng design system chuyên sâu, tôi có thể xây dựng và thiết kế các hệ thống hiệu năng cao, tương thích nhiều thiết bị, có khả năng mở rộng.”
+              "Mình theo hướng Backend Developer .NET: thiết kế API rõ ràng, dữ liệu nhất quán, bảo mật tốt và dễ mở rộng. Mục tiêu là xây dựng các hệ thống chạy ổn định trong môi trường thực tế và tối ưu dần theo số liệu (logging/metrics)."
             </p>
           </div>
           <div class="grid grid--2">
             <div class="panel">
               <h3>Mình làm gì?</h3>
               <ul class="list">
-                <li>Thiết kế UI, xây dựng landing page/website doanh nghiệp</li>
-                <li>Tối ưu tốc độ tải và SEO cơ bản</li>
-                <li>Tích hợp API, form, email, dashboard</li>
+                <li>Xây dựng RESTful API với ASP.NET Core, chuẩn hóa response, validation</li>
+                <li>Thiết kế database (SQL Server), tối ưu query/index, migration với EF Core</li>
+                <li>Xử lý xác thực/phân quyền (JWT, refresh token, role/claim)</li>
+                <li>Tích hợp cache (Redis), background job, email, file storage</li>
               </ul>
             </div>
             <div class="panel">
               <h3>Điểm mạnh</h3>
               <ul class="list">
-                <li>Giao tiếp rõ ràng, bàn giao gọn gàng</li>
-                <li>Thẩm mỹ tốt + chú ý tiểu tiết</li>
-                <li>Ưu tiên chất lượng, bảo trì dễ</li>
+                <li>Ưu tiên clean code + kiến trúc (Clean Architecture), dễ test và bảo trì</li>
+                <li>Tư duy “đúng dữ liệu”: transaction, concurrency, audit, idempotency</li>
+                <li>Chú ý bảo mật: OWASP cơ bản, rate limit, logging an toàn</li>
+                <li>Giao tiếp rõ ràng, tài liệu hóa API và bàn giao gọn gàng</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="grid grid--2" style="margin-top: 16px;">
+            <div class="panel">
+              <h3>Một vài fact</h3>
+              <ul class="list">
+                <li>Tính cách: hòa đồng, vui vẻ, thân thiện, dễ gần; làm việc nhóm ổn và thích chia sẻ/giúp đỡ khi cần.</li>
+                <li>Có chí tiến thủ: hay đặt mục tiêu nhỏ theo tuần và cố gắng làm đến nơi đến chốn.</li>
+                <li>Yêu động vật; thích nuôi/quan sát thú cưng để “xả stress” sau giờ học/làm.</li>
+                <li>Thích học tập và tìm hiểu về AI (LLM/RAG/Agent) để áp dụng vào backend, tự động hóa và tối ưu quy trình.</li>
+              </ul>
+            </div>
+            <div class="panel">
+              <h3>Định hướng nghề nghiệp</h3>
+              <ul class="list">
+                <li>Ngắn hạn: Backend .NET vững chắc (API, database, security, testing, CI/CD)</li>
+                <li>Trung hạn: thiết kế hệ thống (observability, caching, messaging, scaling)</li>
+                <li>Dài hạn: AI-driven Backend Engineer (tích hợp LLM/RAG/Agent để tự động hóa nghiệp vụ và tăng năng suất)</li>
               </ul>
             </div>
           </div>
@@ -162,16 +184,19 @@
           </div>
 
           <div class="chips" role="list">
-            <span class="chip" role="listitem">HTML</span>
-            <span class="chip" role="listitem">CSS</span>
-            <span class="chip" role="listitem">JavaScript</span>
-            <span class="chip" role="listitem">TypeScript</span>
-            <span class="chip" role="listitem">React</span>
-            <span class="chip" role="listitem">Node.js</span>
-            <span class="chip" role="listitem">SQL</span>
+            <span class="chip" role="listitem">C#</span>
+            <span class="chip" role="listitem">.NET</span>
+            <span class="chip" role="listitem">ASP.NET Core</span>
+            <span class="chip" role="listitem">Web API</span>
+            <span class="chip" role="listitem">Entity Framework Core</span>
+            <span class="chip" role="listitem">SQL Server</span>
+            <span class="chip" role="listitem">Redis</span>
+            <span class="chip" role="listitem">Docker</span>
+            <span class="chip" role="listitem">REST</span>
+            <span class="chip" role="listitem">JWT/Auth</span>
+            <span class="chip" role="listitem">Clean Architecture</span>
+            <span class="chip" role="listitem">xUnit (Unit Test)</span>
             <span class="chip" role="listitem">Git</span>
-            <span class="chip" role="listitem">UI/UX</span>
-            <span class="chip" role="listitem">SEO</span>
           </div>
         </div>
       </section>
@@ -188,10 +213,10 @@
           <div class="grid grid--3">
             <article class="proj">
               <div class="proj__thumb" aria-hidden="true"></div>
-              <h3>Landing Page</h3>
-              <p>Trang giới thiệu sản phẩm, tối ưu chuyển đổi, responsive.</p>
+              <h3>ASP.NET Core Web API</h3>
+              <p>API CRUD chuẩn hóa, validation, logging, auth JWT + refresh token.</p>
               <div class="proj__tags">
-                <span>HTML</span><span>CSS</span><span>JS</span>
+                <span>.NET</span><span>Web API</span><span>JWT</span>
               </div>
               <div class="proj__actions">
                 <a class="link" href="#">Demo</a>
@@ -201,10 +226,10 @@
 
             <article class="proj">
               <div class="proj__thumb proj__thumb--2" aria-hidden="true"></div>
-              <h3>Dashboard</h3>
-              <p>Bảng điều khiển, biểu đồ, phân quyền và lọc dữ liệu.</p>
+              <h3>Hệ thống quản lý</h3>
+              <p>Backend cho quản trị: phân quyền role/claim, audit log, export báo cáo.</p>
               <div class="proj__tags">
-                <span>React</span><span>API</span><span>Charts</span>
+                <span>SQL Server</span><span>RBAC</span><span>Audit</span>
               </div>
               <div class="proj__actions">
                 <a class="link" href="#">Demo</a>
@@ -214,10 +239,10 @@
 
             <article class="proj">
               <div class="proj__thumb proj__thumb--3" aria-hidden="true"></div>
-              <h3>Website doanh nghiệp</h3>
-              <p>Trang dịch vụ, form liên hệ, SEO cơ bản, tốc độ tốt.</p>
+              <h3>Cache & Background Jobs</h3>
+              <p>Tối ưu hiệu năng bằng Redis cache, background job cho email/đồng bộ dữ liệu.</p>
               <div class="proj__tags">
-                <span>Next.js</span><span>SEO</span><span>SSR</span>
+                <span>Redis</span><span>Hangfire</span><span>Performance</span>
               </div>
               <div class="proj__actions">
                 <a class="link" href="#">Demo</a>
